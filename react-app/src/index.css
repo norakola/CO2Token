@@ -1,0 +1,95 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Segoe UI, Roboto, Oxygen, arial,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, 'Times New Roman', Times, serif, arual, Franklin Gothic Medium, Bahnschrift light;
+
+  background-image: url("../public/Bblockminii.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100;
+  color: rgba(34, 148, 190, 0.509);
+  text-align: center;
+  margin: 0;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+
+
+  font-size: '65px';
+  text-Shadow: '0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff, 0px 0px 3px #fff';
+
+  font: 'arial';
+  -webkit-text-stroke: 2px rgba(0, 0, 0, 0.089);
+  /* Add this line to add a border to the letters */
+  color: rgb(254, 250, 250);
+  /* Add this line to set the text color to white */
+  font-weight: bold;
+
+
+
+
+
+
+  position: 'relative';
+  transform: 'translateY(-50px)';
+}
+
+
+
+button {
+  background-color: rgb(66, 65, 65);
+  color: rgba(255, 253, 253, 0.895);
+  padding: 5px 10px;
+  margin: 20px;
+  border: 1px solid rgba(254, 250, 250, 0.947);
+  font-weight: 550;
+  font-size: 0.9em;
+  border-radius: 5px;
+  box-shadow: 6px 3px 6px rgba(166, 163, 167, 0.395);
+  border: '2px solid white';
+  font-family: sans-serif;
+  /* Add this line to change the font */
+}
+
+button:hover {
+  background-color: rgb(92, 91, 91)
+    /* Add this line to change the background color on hover */
+}
+
+.wallet-button,
+.info-section {
+  margin-top: 20px;
+}
+
+.info-section {
+  display: none;
+  text-align: left;
+}
+
+.info-section.active {
+  display: block;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-top: 5px;
+}

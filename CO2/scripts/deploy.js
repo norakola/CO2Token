@@ -7,11 +7,11 @@
 const hre = require("hardhat");
 
 async function main() {
-  const Co2Token = await hre.ethers.getContractFactory("Co2Token");
-  const co2token = await Co2Token.deploy();
+  const CO2Token = await hre.ethers.getContractFactory("CO2Token");
+  const co2token = await CO2Token.deploy();
 
   await co2token.waitForDeployment();
-  console.log("Co2 Token deployed :): ", co2token.target);
+  console.log("CO2-Token Vertrag bereitgestellt : ", co2token.target);
 
 }
 
