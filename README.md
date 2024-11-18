@@ -7,9 +7,11 @@ The system works by allowing users (companies) to input their electricity consum
 
 
 # Step-by-Step Guide: Earn CO2 Tokens on Your MetaMask Wallet
-# Prerequisites:
+Prerequisites:
 MetaMask Wallet: You need to have the MetaMask Wallet installed as a browser extension to log in.
+
 Sepolia Testnet: You’ll need Sepolia ETH (Testnet currency) to cover the gas fees for transactions. You can get Sepolia ETH for free from a faucet-> https://www.sepoliafaucet.io/.
+
 Node.js & npm: Ensure you have Node.js and npm (Node Package Manager) installed on your computer to run the web application.
 
 # 1. Install and Set Up MetaMask:
@@ -21,12 +23,16 @@ Create a new wallet or import an existing one.
 # Add Sepolia Testnet:
 Open MetaMask and select the network dropdown at the top.
 Choose "Sepolia Test Network" or add it manually by selecting "Add Network" and entering the following details:
-Network Name: Sepolia
-New RPC URL: https://sepolia.infura.io/v3/YOUR_INFURA_KEY
-Chain ID: 11155111
-Currency Symbol: SEP (Sepolia ETH)
-Get Sepolia ETH for Gas Fees:
 
+Network Name: Sepolia
+
+New RPC URL: https://sepolia.infura.io/v3/YOUR_INFURA_KEY
+
+Chain ID: 11155111
+
+Currency Symbol: SEP (Sepolia ETH)
+
+Get Sepolia ETH for Gas Fees:
 To make transactions on the Sepolia Testnet, you need Sepolia ETH.
 You can request Sepolia ETH from a faucet such as Sepolia Faucet.
 
@@ -34,10 +40,11 @@ You can request Sepolia ETH from a faucet such as Sepolia Faucet.
 Clone the Repository:
 Open your terminal or command line.
 Clone the repository to your local machine using the following command:
-git clone https://github.com/your-username/your-repository.git
-Install Dependencies:
 
-# Navigate to the cloned repository folder:
+git clone https://github.com/your-username/your-repository.git
+
+# Install Dependencies:
+Navigate to the cloned repository folder:
 
 cd your-repository
 
@@ -52,12 +59,15 @@ npm run
 
 # 3. Use the Web Application:
 Open the Website:
+
 Once you run npm run, the application will start on your local server (usually at http://localhost:3000).
+
 Open this URL in your browser to access the web application.
 
 
 # Log in with MetaMask:
 The web application should prompt you to connect with your MetaMask Wallet. Click "Connect with MetaMask."
+
 MetaMask will open, and you can confirm the connection.
 
 
