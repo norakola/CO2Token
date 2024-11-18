@@ -1,16 +1,17 @@
-# CO2-Token-Reward-System
-CO2 Token Reward System
-This project is a CO2 Token Reward System designed to motivate companies to reduce their carbon emissions by leveraging blockchain technology. By implementing an ERC-20 token, named CO2, the system rewards companies for reducing their CO2 output and penalizes them if their emissions increase. The project consists of a smart contract written in Solidity, and a front-end React application that interacts with the blockchain via MetaMask.
+# CO2 Token Reward System
+The CO2 Token Reward System uses blockchain technology to encourage companies to reduce their carbon emissions. By implementing an ERC-20 token called CO2, the system rewards companies with crypto tokens for lowering their emissions and penalizes them by burning tokens if their emissions increase. These tokens are credited or burned directly in the user's MetaMask wallet.
 
-# Overview
-The system works by allowing users (companies) to input their electricity consumption and CO2 emissions. Based on this data, the system calculates the user’s average carbon footprint. If the user reduces their CO2 emissions over time, they are rewarded with CO2 tokens. If their emissions worsen, these tokens are burned (penalizing the user). The main objective is to create an incentive for companies to lower their carbon output and encourage environmental responsibility.
+The system consists of a Solidity smart contract and a React frontend application, which interacts with the blockchain via MetaMask.
+
+# How It Works:
+Companies input their electricity consumption and CO2 emission data. The system calculates their average carbon footprint and rewards them with CO2 tokens, which are credited to their MetaMask wallet when emissions are reduced. If emissions increase, tokens are burned as a penalty. The goal is to encourage companies to lower their carbon output and promote environmental responsibility.
 
 
 # Step-by-Step Guide: Earn CO2 Tokens on Your MetaMask Wallet
-Prerequisites:
+Requirements:
 MetaMask Wallet: You need to have the MetaMask Wallet installed as a browser extension to log in.
 
-Sepolia Testnet: You’ll need Sepolia ETH (Testnet currency) to cover the gas fees for transactions. You can get Sepolia ETH for free from a faucet-> https://www.sepoliafaucet.io/.
+Sepolia Testnet: You’ll need Sepolia ETH (Testnet currency) to cover the gas fees for transactions. You can get Sepolia ETH for free from a faucet -> https://www.sepoliafaucet.io/.
 
 Node.js & npm: Ensure you have Node.js and npm (Node Package Manager) installed on your computer to run the web application.
 
@@ -34,7 +35,7 @@ Currency Symbol: SEP (Sepolia ETH)
 
 Get Sepolia ETH for Gas Fees:
 To make transactions on the Sepolia Testnet, you need Sepolia ETH.
-You can request Sepolia ETH from a faucet such as Sepolia Faucet.
+You can request Sepolia ETH from a faucet such as Sepolia Faucet. -> https://www.sepoliafaucet.io/.
 
 # 2. Download and Run the Web Application:
 Clone the Repository:
@@ -89,18 +90,22 @@ Testnet vs Mainnet: Note that these transactions are happening on the Sepolia Te
 Gas Fees: Sepolia ETH is only for testnet purposes and has no real value. It's only used to cover gas fees for transactions.
 
 
-# Key Features:
-CO2 Token (ERC-20): A custom cryptocurrency built using the ERC-20 standard.
+# Key Features and How It Works:
+CO2 Token (ERC-20): Custom cryptocurrency built to track CO2 emissions and reward users.
 
-Reward System: Companies earn CO2 tokens as a reward for reducing their carbon emissions.
+Reward System: Users earn CO2 tokens for reducing their energy consumption and CO2 emissions.
 
-Penalty System: If the average electricity consumption (and thus the CO2 emissions) increases, tokens are burned from the user's wallet.
+Penalty System: Tokens are burned if a user’s electricity consumption increases, resulting in higher CO2 emissions.
 
-Real-Time CO2 Tracking: Users can track their CO2 emissions and energy consumption, see their improvements or regressions over time, and view the status of their CO2 token balance.
+Smart Contract (CO2Token.sol): Written in Solidity, it handles token transfers, rewards, and penalties based on energy data.
 
-Smart Contract: Written in Solidity, the contract manages the CO2 token operations.
+React.js Frontend (App.js): Connects to the smart contract and MetaMask wallet, displaying energy data, CO2 emissions, and token balance.
 
-Frontend Application: A React.js app that connects to the smart contract and displays the user data, including the current energy consumption, CO2 emissions, and CO2 token balance.
+MetaMask Integration: Users interact with the app via MetaMask to send and receive CO2 tokens using web3.js.
+
+Real-Time Tracking: Displays real-time tracking of energy consumption, CO2 emissions (in tons), and token balance.
+
+Frontend Interactions: Users can input energy data, track improvements or regressions, and view their rewards/penalties.
 
 
 
@@ -128,22 +133,6 @@ CO2-Token-Reward-Sytsem/
 
   
 
-# How It Works
-1. Smart Contract: CO2Token.sol
-The smart contract defines the CO2 token (an ERC-20 token) and handles all token transfers and burning logic based on the user’s electricity consumption and CO2 emissions.
-
-2. Reward Mechanism: Whenever a user submits their energy consumption data and CO2 emission improvements, the contract will reward them with CO2 tokens.
-Penalty Mechanism: If the user’s average consumption increases (and CO2 emissions worsen), the smart contract will burn a set amount of their CO2 tokens as a penalty.
-
-3. React Application: App.js
-The React app is responsible for connecting the smart contract to the front-end. It interacts with the MetaMask wallet and allows the user to input their energy data, track CO2 emissions, and view their token balance.
-
-4. MetaMask Integration: The React app communicates with MetaMask to allow users to send and receive CO2 tokens (with web.js)
-
-5. Tracking CO2 Emissions: The app displays the user’s average electricity consumption, CO2 emissions in tons, and token balance in real time.
-
-6. Frontend Interactions: Users can input their energy data, view whether they’re improving or worsening their emissions, and check if they are being rewarded or penalized.
-
 # Technologies Used
 Solidity: Smart contract language used to develop the CO2 token.
 Ethereum: Blockchain platform for deploying the smart contract.
@@ -151,3 +140,5 @@ React.js & JavaScript: Frontend framework for building the web application.
 Web3.js & ethers.js: Library to interact with the Ethereum blockchain from the frontend.
 MetaMask: Browser extension that allows users to interact with the Ethereum network via their wallet.
 Alchemy : Connects the app to the Ethereum Sepolia testnet via the ALCHEMY_SEPOLIA_ENDPOINT, a node.
+
+Enjoy experimenting with CO2 tokens!
