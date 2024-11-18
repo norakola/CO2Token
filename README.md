@@ -41,7 +41,7 @@ Clone the Repository:
 Open your terminal or command line.
 Clone the repository to your local machine using the following command:
 
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/norakola/CO2Token.git
 
 # Install Dependencies:
 Navigate to the cloned repository folder:
@@ -107,8 +107,7 @@ Frontend Application: A React.js app that connects to the smart contract and dis
 # Project Structure
 CO2-Token-Reward-Sytsem/
 
-   |-CO2/
-   
+ |-CO2/
       |--contracs/
          |--- CO2Token.sol         # The ERC-20 Smart Contract for the CO2 token
          
@@ -120,7 +119,7 @@ CO2-Token-Reward-Sytsem/
          |--contracts/ 
            |---CO2Token.json       # ABI (defines the methods to interact with the smart 
                                     contract, both frontend and backend.)    
-      |-react-app /
+  |-react-app /
         |--src/
            |---App.js                # The React app that connects the smart contract to the 
                                      frontend
@@ -131,17 +130,17 @@ CO2-Token-Reward-Sytsem/
 1. Smart Contract: CO2Token.sol
 The smart contract defines the CO2 token (an ERC-20 token) and handles all token transfers and burning logic based on the user’s electricity consumption and CO2 emissions.
 
-Reward Mechanism: Whenever a user submits their energy consumption data and CO2 emission improvements, the contract will reward them with CO2 tokens.
+2. Reward Mechanism: Whenever a user submits their energy consumption data and CO2 emission improvements, the contract will reward them with CO2 tokens.
 Penalty Mechanism: If the user’s average consumption increases (and CO2 emissions worsen), the smart contract will burn a set amount of their CO2 tokens as a penalty.
 
-React Application: App.js
+3. React Application: App.js
 The React app is responsible for connecting the smart contract to the front-end. It interacts with the MetaMask wallet and allows the user to input their energy data, track CO2 emissions, and view their token balance.
 
-MetaMask Integration: The React app communicates with MetaMask to allow users to send and receive CO2 tokens (with web.js)
+4. MetaMask Integration: The React app communicates with MetaMask to allow users to send and receive CO2 tokens (with web.js)
 
-Tracking CO2 Emissions: The app displays the user’s average electricity consumption, CO2 emissions in tons, and token balance in real time.
+5. Tracking CO2 Emissions: The app displays the user’s average electricity consumption, CO2 emissions in tons, and token balance in real time.
 
-Frontend Interactions: Users can input their energy data, view whether they’re improving or worsening their emissions, and check if they are being rewarded or penalized.
+6. Frontend Interactions: Users can input their energy data, view whether they’re improving or worsening their emissions, and check if they are being rewarded or penalized.
 
 # Technologies Used
 Solidity: Smart contract language used to develop the CO2 token.
